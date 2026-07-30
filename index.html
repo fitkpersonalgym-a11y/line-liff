@@ -10,7 +10,7 @@
   <h3>体験予約メッセージの編集</h3>
   <p style="font-size: 14px; color: #666;">内容を編集してから送信してください：</p>
   
-  <textarea id="msg" rows="6" style="width:100%; box-sizing:border-box; padding:8px; font-size:16px;">【体験予約希望】
+  <textarea id="msg" rows="10" style="width:100%; box-sizing:border-box; padding:8px; font-size:16px;">【体験予約希望】
 ・お名前：
 ・ご希望種別（ピラティス / トレーニング）：
 ・第1希望日時：
@@ -21,7 +21,7 @@
   <button id="btn" style="margin-top:16px; width:100%; padding:12px; background:#06C755; color:white; border:none; border-radius:8px; font-size:16px; font-weight:bold;">メッセージを送信する</button>
 
   <script>
-    // ① LIFFの初期化（※後ほど取得するLIFF IDを入力します）
+    // ① LIFFの初期化
     liff.init({ liffId: "2010898171-fvCTdf30" }).then(() => {
       if (!liff.isLoggedIn()) {
         liff.login();
